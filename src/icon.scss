@@ -7,7 +7,7 @@
 //        src: url('scr_uxiconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 //        url('scr_uxiconfont.woff') format('woff'), /* chrome、firefox */
 //        url('scr_uxiconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-//        url('scr_uxiconfont.svg#svgFontName') format('svg'); /* iOS 4.1- */
+//        url('scr_uxiconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
 //    }
 //
 // 2. 第二步：定义使用iconfont的样式
@@ -19,11 +19,11 @@
 
 @font-face {
   font-family: "uxiconfont";
-  src: url("$iconfontpath.eot"); /* IE9*/
-  src: url("$iconfontpath.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       url("$iconfontpath.woff") format("woff"), /* chrome、firefox */
-       url("$iconfontpath.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-       url("$iconfontpath.svg#svgFontName") format("svg"); /* iOS 4.1- */
+  src: url("#{$iconfontpath}.eot"); /* IE9*/
+  src: url("#{$iconfontpath}.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("#{$iconfontpath}.woff") format("woff"), /* chrome、firefox */
+       url("#{$iconfontpath}.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+       url("#{$iconfontpath}.svg#uxiconfont") format("svg"); /* iOS 4.1- */
 }
 .iconfont {
   font-family: "uxiconfont";

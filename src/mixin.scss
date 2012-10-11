@@ -26,6 +26,26 @@
           border-radius: $radius;
 }
 
+@mixin border-top-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+          border-top-left-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+          border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+}
+
 // Drop shadows
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow;
@@ -86,7 +106,7 @@
   background-image: -o-linear-gradient(top, $startColor, $endColor); // Opera 11.10
   background-image: linear-gradient(top, $startColor, $endColor); // The standard
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$startColor}, endColorstr=#{$endColor}, GradientType=0); // IE9 and down
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{ie-hex-str($startColor)}, endColorstr=#{ie-hex-str($endColor)}, GradientType=0); // IE9 and below
 }
 
 @mixin gradient-striped($color, $angle: -45deg) {

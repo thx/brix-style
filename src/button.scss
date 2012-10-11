@@ -67,11 +67,13 @@ input, button {
     /*border-right-width: 0;*/
     &:first-child {
       border-left-width: 1px;
-      @include border-radius(2px 0 0 2px);
+      @include border-top-left-radius(2px);
+      @include border-bottom-left-radius(2px);
     }
     &:last-child {
       /*border-right-width: 1px;*/
-      @include border-radius(0 2px 2px 0);
+      @include border-top-right-radius(2px);
+      @include border-bottom-right-radius(2px);
     }
   }
 }
@@ -107,7 +109,7 @@ input, button {
   &,
   &:hover,
   &:visited {
-    color:#FFF!important;
+    color: #FFF!important;
   }
 
   &:hover {
@@ -145,7 +147,7 @@ input, button {
 
 .btn-disabled {
   border: 1px solid #e0e0e0;
-  border-bottom-color:#ccc;
+  border-bottom-color: #ccc;
   cursor: default;
 
   &,
