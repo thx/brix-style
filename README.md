@@ -34,3 +34,16 @@ SCSS 其实也是个很好的选择，它的 mixin 用法比 LESS 要清晰，�
 build 目录下即为 Brix Style 所提供的两个文件。如果只需要使用基础样式，不要表单部分，使用
 brix.css 文件即可。其余情况，用 brix-all.css 吧。
 
+## 使用说明
+
+### grunt
+
+与 Brix 原项目一样，Brix Style 采用 grunt 作为开发辅助工具，目前只有一个打包任务，
+在项目目录下执行：
+
+```bash
+npm install
+grunt sass
+```
+
+即可

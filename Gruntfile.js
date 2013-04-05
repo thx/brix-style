@@ -7,7 +7,8 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'build/brix.css': 'scss/brix.scss'
+                    'build/brix.css': 'scss/brix.scss',
+                    'build/brix-all.css': 'scss/brix-all.scss'
                 }
             }
         }
