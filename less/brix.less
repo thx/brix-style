@@ -1,0 +1,32 @@
+/**
+ * CSS Base
+ *   继承 KISSY Reset，减少推广阻力。同时做些更新
+ **/
+@import "base.less";
+
+/**
+ * 核心变量及 mixin，会提供给 gallery 使用
+ *   思路：最小影响，最大适用范围
+ **/
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+/**
+ * 栅格系统及页面布局
+ **/
+@import "grid.less";
+/*@import "layouts.less";*/
+
+/**
+ * 基础 CSS
+ *   字体 及 UX控件
+ **/
+@import "type.less";
+@import "icons.less";
+@import "buttons.less";
+
+/**
+ * 小工具类
+ *   可以在页面直接输出的 mixin
+ **/
+@import "utilities.less";
