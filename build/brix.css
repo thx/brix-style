@@ -1,0 +1,1807 @@
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "uxiconfont";
+  src: url("http://t.tbcdn.cn/apps/e/brix/fonts/uxiconfont.eot");
+  /* IE9*/
+  src: url("http://t.tbcdn.cn/apps/e/brix/fonts/uxiconfont.eot?#iefix") format("embedded-opentype"), url("http://t.tbcdn.cn/apps/e/brix/fonts/uxiconfont.woff") format("woff"), url("http://t.tbcdn.cn/apps/e/brix/fonts/uxiconfont.ttf") format("truetype"), url("http://t.tbcdn.cn/apps/e/brix/fonts/uxiconfont.svg#uxiconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "uxiconfont";
+  font-size: 16px;
+  font-style: normal;
+}
+
+.row {
+  margin-left: -10px;
+  *zoom: 1;
+}
+.row:before, .row:after {
+  display: table;
+  content: "";
+}
+.row:after {
+  clear: both;
+}
+
+.span1 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 10px;
+}
+
+.span2 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 30px;
+}
+
+.span3 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 50px;
+}
+
+.span4 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 70px;
+}
+
+.span5 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 90px;
+}
+
+.span6 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 110px;
+}
+
+.span7 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 130px;
+}
+
+.span8 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 150px;
+}
+
+.span9 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 170px;
+}
+
+.span10 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 190px;
+}
+
+.span11 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 210px;
+}
+
+.span12 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 230px;
+}
+
+.span13 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 250px;
+}
+
+.span14 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 270px;
+}
+
+.span15 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 290px;
+}
+
+.span16 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 310px;
+}
+
+.span17 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 330px;
+}
+
+.span18 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 350px;
+}
+
+.span19 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 370px;
+}
+
+.span20 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 390px;
+}
+
+.span21 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 410px;
+}
+
+.span22 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 430px;
+}
+
+.span23 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 450px;
+}
+
+.span24 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 470px;
+}
+
+.span25 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 490px;
+}
+
+.span26 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 510px;
+}
+
+.span27 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 530px;
+}
+
+.span28 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 550px;
+}
+
+.span29 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 570px;
+}
+
+.span30 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 590px;
+}
+
+.span31 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 610px;
+}
+
+.span32 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 630px;
+}
+
+.span33 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 650px;
+}
+
+.span34 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 670px;
+}
+
+.span35 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 690px;
+}
+
+.span36 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 710px;
+}
+
+.span37 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 730px;
+}
+
+.span38 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 750px;
+}
+
+.span39 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 770px;
+}
+
+.span40 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 790px;
+}
+
+.span41 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 810px;
+}
+
+.span42 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 830px;
+}
+
+.span43 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 850px;
+}
+
+.span44 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 870px;
+}
+
+.span45 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 890px;
+}
+
+.span46 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 910px;
+}
+
+.span47 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 930px;
+}
+
+.span48 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 950px;
+}
+
+.span49 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 970px;
+}
+
+.span50 {
+  float: left;
+  _display: inline;
+  margin-left: 10px;
+  width: 990px;
+}
+
+.offset1 {
+  margin-left: 10px;
+}
+
+.offset2 {
+  margin-left: 30px;
+}
+
+.offset3 {
+  margin-left: 50px;
+}
+
+.offset4 {
+  margin-left: 70px;
+}
+
+.offset5 {
+  margin-left: 90px;
+}
+
+.offset6 {
+  margin-left: 110px;
+}
+
+.offset7 {
+  margin-left: 130px;
+}
+
+.offset8 {
+  margin-left: 150px;
+}
+
+.offset9 {
+  margin-left: 170px;
+}
+
+.offset10 {
+  margin-left: 190px;
+}
+
+.offset11 {
+  margin-left: 210px;
+}
+
+.offset12 {
+  margin-left: 230px;
+}
+
+.offset13 {
+  margin-left: 250px;
+}
+
+.offset14 {
+  margin-left: 270px;
+}
+
+.offset15 {
+  margin-left: 290px;
+}
+
+.offset16 {
+  margin-left: 310px;
+}
+
+.offset17 {
+  margin-left: 330px;
+}
+
+.offset18 {
+  margin-left: 350px;
+}
+
+.offset19 {
+  margin-left: 370px;
+}
+
+.offset20 {
+  margin-left: 390px;
+}
+
+.offset21 {
+  margin-left: 410px;
+}
+
+.offset22 {
+  margin-left: 430px;
+}
+
+.offset23 {
+  margin-left: 450px;
+}
+
+.offset24 {
+  margin-left: 470px;
+}
+
+.offset25 {
+  margin-left: 490px;
+}
+
+.offset26 {
+  margin-left: 510px;
+}
+
+.offset27 {
+  margin-left: 530px;
+}
+
+.offset28 {
+  margin-left: 550px;
+}
+
+.offset29 {
+  margin-left: 570px;
+}
+
+.offset30 {
+  margin-left: 590px;
+}
+
+.offset31 {
+  margin-left: 610px;
+}
+
+.offset32 {
+  margin-left: 630px;
+}
+
+.offset33 {
+  margin-left: 650px;
+}
+
+.offset34 {
+  margin-left: 670px;
+}
+
+.offset35 {
+  margin-left: 690px;
+}
+
+.offset36 {
+  margin-left: 710px;
+}
+
+.offset37 {
+  margin-left: 730px;
+}
+
+.offset38 {
+  margin-left: 750px;
+}
+
+.offset39 {
+  margin-left: 770px;
+}
+
+.offset40 {
+  margin-left: 790px;
+}
+
+.offset41 {
+  margin-left: 810px;
+}
+
+.offset42 {
+  margin-left: 830px;
+}
+
+.offset43 {
+  margin-left: 850px;
+}
+
+.offset44 {
+  margin-left: 870px;
+}
+
+.offset45 {
+  margin-left: 890px;
+}
+
+.offset46 {
+  margin-left: 910px;
+}
+
+.offset47 {
+  margin-left: 930px;
+}
+
+.offset48 {
+  margin-left: 950px;
+}
+
+.offset49 {
+  margin-left: 970px;
+}
+
+.offset50 {
+  margin-left: 990px;
+}
+
+.container {
+  width: 990px;
+}
+
+.btn {
+  box-sizing: content-box;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 0;
+  padding: 0 10px;
+  width: auto;
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom-color: #bbb;
+  background-color: #f4f4f4;
+  background-image: -moz-linear-gradient(top, #f8f8f8, #eeeeee);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #eeeeee);
+  background-image: -o-linear-gradient(top, #f8f8f8, #eeeeee);
+  background-image: linear-gradient(top, #f8f8f8, #eeeeee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF8F8F8, endColorstr=#FFEEEEEE, GradientType=0);
+}
+.btn, .btn:hover, .btn:visited {
+  color: #333!important;
+}
+.btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF2F2F2, endColorstr=#FFE6E6E6, GradientType=0);
+  border-color: #ddd;
+}
+.btn:active {
+  background-color: #eaeaea;
+  background-image: -moz-linear-gradient(top, #e6e6e6, #f2f2f2);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #f2f2f2);
+  background-image: -o-linear-gradient(top, #e6e6e6, #f2f2f2);
+  background-image: linear-gradient(top, #e6e6e6, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE6E6E6, endColorstr=#FFF2F2F2, GradientType=0);
+  border-color: #ddd;
+}
+.btn:focus {
+  border-style: solid;
+}
+.btn .iconfont {
+  font-size: 12px!important;
+  font-weight: normal;
+}
+
+input.btn, button.btn {
+  *height: 23px;
+  *line-height: 20px;
+}
+
+/*group btn*/
+.btn-group {
+  *zoom: 1;
+}
+.btn-group:before, .btn-group:after {
+  display: table;
+  content: "";
+}
+.btn-group:after {
+  clear: both;
+}
+.btn-group .btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-left-width: 0;
+  float: left;
+  *margin-right: 0;
+  *margin-left: 0;
+  /*border-right-width: 0;*/
+}
+.btn-group .btn:first-child {
+  border-left-width: 1px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.btn-group .btn:last-child {
+  /*border-right-width: 1px;*/
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.btn-red {
+  border-color: transparent;
+  border-bottom-color: #c21b1b;
+  background-color: #ff3636;
+  background-image: -moz-linear-gradient(top, #ff4444, #ff2222);
+  background-image: -ms-linear-gradient(top, #ff4444, #ff2222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff4444), to(#ff2222));
+  background-image: -webkit-linear-gradient(top, #ff4444, #ff2222);
+  background-image: -o-linear-gradient(top, #ff4444, #ff2222);
+  background-image: linear-gradient(top, #ff4444, #ff2222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF4444, endColorstr=#FFFF2222, GradientType=0);
+}
+.btn-red, .btn-red:hover, .btn-red:visited {
+  color: #FFF!important;
+}
+.btn-red:hover {
+  background-color: #e41a1b;
+  background-image: -moz-linear-gradient(top, #ee2020, #d51314);
+  background-image: -ms-linear-gradient(top, #ee2020, #d51314);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee2020), to(#d51314));
+  background-image: -webkit-linear-gradient(top, #ee2020, #d51314);
+  background-image: -o-linear-gradient(top, #ee2020, #d51314);
+  background-image: linear-gradient(top, #ee2020, #d51314);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFEE2020, endColorstr=#FFD51314, GradientType=0);
+  border-color: transparent;
+}
+.btn-red:active {
+  background-color: #df1818;
+  background-image: -moz-linear-gradient(top, #d51314, #ee2020);
+  background-image: -ms-linear-gradient(top, #d51314, #ee2020);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d51314), to(#ee2020));
+  background-image: -webkit-linear-gradient(top, #d51314, #ee2020);
+  background-image: -o-linear-gradient(top, #d51314, #ee2020);
+  background-image: linear-gradient(top, #d51314, #ee2020);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFD51314, endColorstr=#FFEE2020, GradientType=0);
+  border-color: transparent;
+}
+
+.btn-orange {
+  border-color: transparent;
+  border-bottom-color: #cf370c;
+  background-color: #ff4e00;
+  background-image: -moz-linear-gradient(top, #ff5500, #ff4400);
+  background-image: -ms-linear-gradient(top, #ff5500, #ff4400);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff5500), to(#ff4400));
+  background-image: -webkit-linear-gradient(top, #ff5500, #ff4400);
+  background-image: -o-linear-gradient(top, #ff5500, #ff4400);
+  background-image: linear-gradient(top, #ff5500, #ff4400);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF5500, endColorstr=#FFFF4400, GradientType=0);
+}
+.btn-orange, .btn-orange:hover, .btn-orange:visited {
+  color: #FFF!important;
+}
+.btn-orange:hover {
+  background-color: #ef3f00;
+  background-image: -moz-linear-gradient(top, #ff4400, #d73900);
+  background-image: -ms-linear-gradient(top, #ff4400, #d73900);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff4400), to(#d73900));
+  background-image: -webkit-linear-gradient(top, #ff4400, #d73900);
+  background-image: -o-linear-gradient(top, #ff4400, #d73900);
+  background-image: linear-gradient(top, #ff4400, #d73900);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFF4400, endColorstr=#FFD73900, GradientType=0);
+  border-color: transparent;
+}
+.btn-orange:active {
+  background-color: #e73d00;
+  background-image: -moz-linear-gradient(top, #d73900, #ff4400);
+  background-image: -ms-linear-gradient(top, #d73900, #ff4400);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d73900), to(#ff4400));
+  background-image: -webkit-linear-gradient(top, #d73900, #ff4400);
+  background-image: -o-linear-gradient(top, #d73900, #ff4400);
+  background-image: linear-gradient(top, #d73900, #ff4400);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFD73900, endColorstr=#FFFF4400, GradientType=0);
+  border-color: transparent;
+}
+
+.btn-blue {
+  border-color: transparent;
+  border-bottom-color: #0960ab;
+  background-color: #4287c4;
+  background-image: -moz-linear-gradient(top, #488fcd, #3a7db8);
+  background-image: -ms-linear-gradient(top, #488fcd, #3a7db8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#488fcd), to(#3a7db8));
+  background-image: -webkit-linear-gradient(top, #488fcd, #3a7db8);
+  background-image: -o-linear-gradient(top, #488fcd, #3a7db8);
+  background-image: linear-gradient(top, #488fcd, #3a7db8);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF488FCD, endColorstr=#FF3A7DB8, GradientType=0);
+}
+.btn-blue, .btn-blue:hover, .btn-blue:visited {
+  color: #FFF!important;
+}
+.btn-blue:hover {
+  background-color: #3579b5;
+  background-image: -moz-linear-gradient(top, #4087c6, #25659c);
+  background-image: -ms-linear-gradient(top, #4087c6, #25659c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4087c6), to(#25659c));
+  background-image: -webkit-linear-gradient(top, #4087c6, #25659c);
+  background-image: -o-linear-gradient(top, #4087c6, #25659c);
+  background-image: linear-gradient(top, #4087c6, #25659c);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF4087C6, endColorstr=#FF25659C, GradientType=0);
+  border-color: transparent;
+}
+.btn-blue:active {
+  background-color: #2f72ac;
+  background-image: -moz-linear-gradient(top, #25659c, #4087c6);
+  background-image: -ms-linear-gradient(top, #25659c, #4087c6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#25659c), to(#4087c6));
+  background-image: -webkit-linear-gradient(top, #25659c, #4087c6);
+  background-image: -o-linear-gradient(top, #25659c, #4087c6);
+  background-image: linear-gradient(top, #25659c, #4087c6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF25659C, endColorstr=#FF4087C6, GradientType=0);
+  border-color: transparent;
+}
+
+.btn-disabled {
+  border: 1px solid #e0e0e0;
+  border-bottom-color: #ccc;
+  cursor: default;
+}
+.btn-disabled, .btn-disabled:hover, .btn-disabled:visited {
+  color: #cccccc !important;
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF2F2F2, endColorstr=#FFE6E6E6, GradientType=0);
+}
+.btn-disabled:hover {
+  border-color: #e0e0e0;
+}
+
+.btn-size45, .btn-xlarge {
+  padding: 0 20px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 18px;
+}
+.btn-size45 .iconfont, .btn-xlarge .iconfont {
+  font-size: 18px!important;
+}
+
+.btn-size40, .btn-large {
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+}
+.btn-size40 .iconfont, .btn-large .iconfont {
+  font-size: 14px!important;
+}
+
+.btn-size30, .btn-medium {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 20px;
+}
+
+.btn-size28, .btn-small {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px;
+}
+
+.btn-size25, .btn-xsmall {
+  height: 23px;
+  line-height: 23px;
+}
+
+form fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+form legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 27px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+form legend small {
+  font-size: 13.5px;
+  color: #999999;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+}
+form input,
+form textarea,
+form select {
+  display: inline-block;
+  width: 210px;
+  height: 18px;
+  padding: 2px 8px 3px;
+  margin-bottom: 9px;
+  line-height: 18px;
+  color: #333333;
+  border: 1px solid #dddddd;
+  border-top-color: #bbbbbb;
+  border-radius: 2px;
+}
+form ::-webkit-input-placeholder {
+  color: #cccccc;
+}
+form :-ms-input-placeholder {
+  color: #cccccc;
+}
+form :-moz-placeholder {
+  color: #cccccc;
+}
+form select {
+  height: 28px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+  line-height: 28px;
+  width: 220px;
+}
+form textarea {
+  padding-top: 4px;
+  padding-right: 4px;
+  height: auto;
+}
+form label input,
+form label textarea,
+form label select {
+  display: block;
+}
+form input,
+form textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+form input:hover,
+form textarea:hover {
+  border-color: #cccccc;
+  border-top-color: #999999;
+  -webkit-box-shadow: inset 0 1px whitesmoke;
+  -moz-box-shadow: inset 0 1px whitesmoke;
+  box-shadow: inset 0 1px whitesmoke;
+}
+form input:focus,
+form input.focus,
+form textarea.focus,
+form textarea:focus {
+  border-color: #488fcd;
+  outline: 0;
+  -webkit-box-shadow: 0 0 8px rgba(72, 143, 205, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(72, 143, 205, 0.6);
+  box-shadow: 0 0 8px rgba(72, 143, 205, 0.6);
+}
+form input.disabled,
+form input[disabled],
+form select[disabled],
+form textarea[disabled],
+form input[readonly],
+form select[readonly],
+form textarea[readonly] {
+  cursor: not-allowed;
+  border-color: #cccccc;
+  color: #cccccc;
+  background-color: whitesmoke;
+}
+
+.radio,
+.checkbox {
+  margin-top: 5px;
+  /*padding-left: 18px;*/
+}
+
+.radio input,
+.checkbox input {
+  float: left;
+  _display: inline;
+  border: none;
+  /*margin-left: -18px;*/
+  width: auto;
+  margin: 3px 4px 9px 0;
+}
+
+.controls .inline {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.control-group.warning .help-block,
+.control-group.warning .help-inline {
+  color: #c09853;
+}
+.control-group.warning input,
+.control-group.warning select,
+.control-group.warning textarea {
+  border-color: #c09853;
+}
+.control-group.warning input:focus,
+.control-group.warning select:focus,
+.control-group.warning textarea:focus {
+  border-color: #a47e3c;
+  -webkit-box-shadow: 0 0 6px #dbc59e;
+  -moz-box-shadow: 0 0 6px #dbc59e;
+  box-shadow: 0 0 6px #dbc59e;
+}
+.control-group.warning .input-prepend .add-on,
+.control-group.warning .input-append .add-on {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border-color: #c09853;
+}
+
+.control-group.error .help-block,
+.control-group.error .help-inline {
+  color: #ec0000;
+}
+.control-group.error input,
+.control-group.error select,
+.control-group.error textarea {
+  border-color: #ec0000;
+}
+.control-group.error input:focus,
+.control-group.error select:focus,
+.control-group.error textarea:focus {
+  border-color: #b90000;
+  -webkit-box-shadow: 0 0 6px #ff5353;
+  -moz-box-shadow: 0 0 6px #ff5353;
+  box-shadow: 0 0 6px #ff5353;
+}
+.control-group.error .input-prepend .add-on,
+.control-group.error .input-append .add-on {
+  color: #ec0000;
+  background-color: #f2dede;
+  border-color: #ec0000;
+}
+
+.control-group.success .help-block,
+.control-group.success .help-inline {
+  color: #468847;
+}
+.control-group.success input,
+.control-group.success select,
+.control-group.success textarea {
+  border-color: #468847;
+}
+.control-group.success input:focus,
+.control-group.success select:focus,
+.control-group.success textarea:focus {
+  border-color: #356635;
+  -webkit-box-shadow: 0 0 6px #7aba7b;
+  -moz-box-shadow: 0 0 6px #7aba7b;
+  box-shadow: 0 0 6px #7aba7b;
+}
+.control-group.success .input-prepend .add-on,
+.control-group.success .input-append .add-on {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #468847;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid,
+select:focus:required:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+input:focus:required:invalid:focus,
+textarea:focus:required:invalid:focus,
+select:focus:required:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #f8b9b7;
+}
+
+.form-actions {
+  padding: 17px 20px 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  background-color: whitesmoke;
+  border-top: 1px solid #dddddd;
+  *zoom: 1;
+}
+.form-actions:before, .form-actions:after {
+  display: table;
+  content: "";
+}
+.form-actions:after {
+  clear: both;
+}
+
+.uneditable-input {
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: not-allowed;
+  border-color: #eee;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+}
+
+.help-block,
+.help-inline {
+  color: #999999;
+}
+
+.help-block {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.help-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.input-prepend,
+.input-append {
+  margin-bottom: 5px;
+}
+.input-prepend input,
+.input-prepend select,
+.input-prepend .uneditable-input,
+.input-append input,
+.input-append select,
+.input-append .uneditable-input {
+  position: relative;
+  margin-bottom: 0;
+  *margin-left: 0;
+  vertical-align: middle;
+  /*.border-radius(0 @inputBorderRadius @inputBorderRadius 0);*/
+}
+.input-prepend input:focus,
+.input-prepend select:focus,
+.input-prepend .uneditable-input:focus,
+.input-append input:focus,
+.input-append select:focus,
+.input-append .uneditable-input:focus {
+  z-index: 2;
+}
+.input-prepend .uneditable-input,
+.input-append .uneditable-input {
+  border-left-color: #ccc;
+}
+.input-prepend .add-on,
+.input-append .add-on {
+  display: inline-block;
+  width: auto;
+  height: 18px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+  vertical-align: middle;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+}
+.input-prepend .add-on,
+.input-prepend .btn,
+.input-append .add-on,
+.input-append .btn {
+  margin-left: -1px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.input-prepend .active,
+.input-append .active {
+  background-color: #60ff33;
+  border-color: #229900;
+}
+
+.input-prepend .add-on,
+.input-prepend .btn {
+  margin-right: -1px;
+}
+
+.input-append input,
+.input-append select,
+.input-append .uneditable-input {
+  border-right-color: #ccc;
+  border-left-color: #eee;
+}
+
+.input-prepend.input-append input,
+.input-prepend.input-append select,
+.input-prepend.input-append .uneditable-input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.input-prepend.input-append .add-on:first-child,
+.input-prepend.input-append .btn:first-child {
+  margin-right: -1px;
+}
+.input-prepend.input-append .add-on:last-child,
+.input-prepend.input-append .btn:last-child {
+  margin-left: -1px;
+}
+
+.search-query {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+
+.form-search input,
+.form-search select,
+.form-inline input,
+.form-inline select,
+.form-horizontal input,
+.form-horizontal select {
+  display: inline-block;
+}
+.form-search textarea,
+.form-search .help-inline,
+.form-search .uneditable-input,
+.form-search .input-prepend,
+.form-search .input-append,
+.form-inline textarea,
+.form-inline .help-inline,
+.form-inline .uneditable-input,
+.form-inline .input-prepend,
+.form-inline .input-append,
+.form-horizontal textarea,
+.form-horizontal .help-inline,
+.form-horizontal .uneditable-input,
+.form-horizontal .input-prepend,
+.form-horizontal .input-append {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-bottom: 0;
+}
+.form-search .hide,
+.form-inline .hide,
+.form-horizontal .hide {
+  display: none;
+}
+
+.form-search label,
+.form-inline label {
+  display: inline-block;
+}
+
+.form-search .input-append,
+.form-inline .input-append,
+.form-search .input-prepend,
+.form-inline .input-prepend {
+  margin-bottom: 0;
+}
+
+.form-search .radio,
+.form-search .checkbox,
+.form-inline .radio,
+.form-inline .checkbox {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.form-search .radio input[type="radio"],
+.form-search .checkbox input[type="checkbox"],
+.form-inline .radio input[type="radio"],
+.form-inline .checkbox input[type="checkbox"] {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+
+.control-group {
+  margin-bottom: 9px;
+}
+
+legend + .control-group {
+  margin-top: 18px;
+  -webkit-margin-top-collapse: separate;
+}
+
+.form-horizontal .control-group {
+  margin-bottom: 18px;
+  *zoom: 1;
+}
+.form-horizontal .control-group:before, .form-horizontal .control-group:after {
+  display: table;
+  content: "";
+}
+.form-horizontal .control-group:after {
+  clear: both;
+}
+.form-horizontal .control-label {
+  float: left;
+  width: 150px;
+  padding-top: 5px;
+  text-align: right;
+}
+.form-horizontal .controls {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 160px;
+  *margin-left: 0;
+}
+.form-horizontal .controls:first-child {
+  *padding-left: 160px;
+}
+.form-horizontal .help-block {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.form-horizontal .form-actions {
+  padding-left: 160px;
+}
